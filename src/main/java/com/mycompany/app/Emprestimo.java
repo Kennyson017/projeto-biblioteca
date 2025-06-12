@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 import java.util.Date;
 
 public class Emprestimo {

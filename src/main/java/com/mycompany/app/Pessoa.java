@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 public class Pessoa {
     private String nome;
     private int idade;
