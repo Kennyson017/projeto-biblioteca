@@ -2,6 +2,7 @@ package com.mycompany.app;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import com.mycompany.app.Model.*;
 
 public class PessoaTest {
     @Test
