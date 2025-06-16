@@ -40,5 +40,15 @@ public class Autor extends Pessoa {
                 System.out.println(" - " + livro.getTitulo());
             }
         }
-    }    
+    } 
+    
+    @Override
+    public String getNome() {
+       return super.getNome();
+    }
+
+    @Override
+    public void setNome(String nome) {
+        super.setNome(nome);
+    }
 }

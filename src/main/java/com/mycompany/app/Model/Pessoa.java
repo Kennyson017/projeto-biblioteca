@@ -1,6 +1,8 @@
 package com.mycompany.app.Model;
 
-public class Pessoa {
+import com.mycompany.app.Interfaces.Pessoavel;
+
+public class Pessoa implements Pessoavel {
     private String nome;
     private int idade;
     private String nacionalidade;
@@ -17,6 +19,7 @@ public class Pessoa {
         this.nacionalidade = nacionalidade;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
@@ -29,6 +32,7 @@ public class Pessoa {
     return nacionalidade;
     }
 
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
