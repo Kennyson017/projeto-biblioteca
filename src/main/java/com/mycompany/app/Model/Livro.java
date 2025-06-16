@@ -1,6 +1,8 @@
 package com.mycompany.app.Model;
 
-public class Livro {
+import com.mycompany.app.Interface.AutorInteface;
+
+public class Livro implements AutorInteface {
     private String titulo;
     private Autor autor;
     private String genero;
@@ -31,5 +33,10 @@ public class Livro {
 
     public void validarDisponibilidade(boolean status) {
         this.disponivel = status;
+    }
+
+    @Override
+    public void publicar() {
+        System.out.println("Livro publicando...");
     }
 }
