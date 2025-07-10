@@ -5,10 +5,20 @@ import java.util.HashMap;
 
 public class Autor extends Pessoa {
     private ArrayList<Livro> obrasPublicadas;
+    private boolean autorUsuario;
 
-    public Autor(String nome, String nacionalidade) {
+    public Autor(String nome, String nacionalidade, boolean autorUsuario) {
         super(nome, nacionalidade);
         this.obrasPublicadas = new ArrayList<>();
+        this.autorUsuario = autorUsuario;
+    }
+
+    public TipoAutor getautorUsuario() {
+        return autorUsuario;
+    }
+
+    public boolean setautorUsuario(boolean autorUsuario) {
+        this.autorUsuario = autorUsuario;
     }
 
     public void adicionarObra(Livro livro) {
