@@ -13,11 +13,11 @@ public class Autor extends Pessoa {
         this.autorUsuario = autorUsuario;
     }
 
-    public TipoAutor getautorUsuario() {
+    public boolean getautorUsuario() {
         return autorUsuario;
     }
 
-    public boolean setautorUsuario(boolean autorUsuario) {
+    public void setautorUsuario(boolean autorUsuario) {
         this.autorUsuario = autorUsuario;
     }
 

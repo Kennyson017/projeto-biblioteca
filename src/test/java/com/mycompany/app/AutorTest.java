@@ -15,7 +15,7 @@ public class AutorTest {
 
     @Test
     public void TestSetutorUsuario() {
-        autor1.setautorUsuario(true) 
+        autor1.setautorUsuario(true);
         assertEquals(true, autor1.getautorUsuario());
     }
 }
